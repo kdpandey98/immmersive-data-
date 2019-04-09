@@ -7,8 +7,10 @@ print ('Numbers less than ', num, 'that are prime or not prime:')
 
 # create placeholder for running list of primes, initialize to none
 primes = []
+print (1,' is not a prime number')  # 1 does not have two factors
 
-for cur in range(2,num+1):  # loop through each number to determine if prime
+
+for cur in range(2,num+1):  # loop through each number starting at 2 to determine if prime
     prime=True
     for den in primes: # determine if currnet number is divisible by any of previously identified primes
         if not (cur % den):
